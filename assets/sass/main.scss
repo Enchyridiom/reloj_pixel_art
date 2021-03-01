@@ -1,0 +1,94 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+@font-face {
+  font-family: 'twelvebox_v2regular';
+  src: url('../fonts/Twelvebox/twelvebox-v3-webfont.woff2') format('woff2'),
+       url('../fonts/Twelvebox/twelvebox-v3-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/*
+* {
+  border: 1px solid rgb(195, 199, 146);
+}
+*/
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'twelvebox_v2regular';
+  background-color: #000714;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock{
+  display: flex;
+  align-self: center;
+  color: #39B54A;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #262A44;
+  border: 1rem solid #4A5171;
+  height: 200px;
+  width: 350px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+#time{
+  display: flex;
+  z-index: 99;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+#date{
+  display: flex;
+  z-index: 99;
+  font-size: 2rem;
+}
+
+.furniture{
+  display: flex;
+  background-color: #1C1208;
+  width: 800px;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+
+  .drawer{
+    display: flex;
+    background-color: #31281E;
+    width: 768px;
+    height: 40%;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+    .handle{
+      background-color: #1C1208;
+      width: 80px;
+      height: 20px;
+      display: flex;
+    }
+
+  }
+}
